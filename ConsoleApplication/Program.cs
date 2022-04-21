@@ -11,16 +11,14 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             // 2. Store two variables - Your name, Your location (state or country)
-            Console.Write("Please insert your name: ");
+            Console.Write("Please enter your name: ");
             string name = Console.ReadLine();
-            Console.Write("Please insert your location: ");
+            Console.Write("Please enter your location: ");
             string location = Console.ReadLine();
 
             // 3. Output two WriteLine staements that display those two variables with proper labels using String Interpolation
 
-            Console.WriteLine("My name is " + name);
-            Console.WriteLine("I am from " + location);
-            //Console.WriteLine($"My name is {name}, I am from {location}");
+            Console.WriteLine($"Your name is {name}, you are from {location}");
 
             // 4. Output the current date, but not the current time
 
@@ -48,11 +46,11 @@ namespace ConsoleApplication
             double width, height, woodLength, glassArea;
             string widthString, heightString;
 
-            Console.WriteLine("Please input the width of the window frame (meters): ");
+            Console.Write("Please input the width of the window frame (meters): ");
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
 
-            Console.WriteLine("Please input the height of the window frame (meters): ");
+            Console.Write("Please input the height of the window frame (meters): ");
             heightString = Console.ReadLine();
             height = double.Parse(heightString);
 
@@ -61,7 +59,7 @@ namespace ConsoleApplication
             Console.WriteLine("The length of the wood is " +
             woodLength + " feet");
             Console.WriteLine("The area of the glass is " +
-            glassArea + " square metres");
+            glassArea + " square meters");
 
             Console.WriteLine("Press any key to end.");
             Console.ReadKey();
