@@ -11,9 +11,10 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             // 2. Store two variables - Your name, Your location (state or country)
-
-            string name = "Benjamin Fernelius";
-            string location = "Rexburg, ID";
+            Console.Write("Please insert your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Please insert your location: ");
+            string location = Console.ReadLine();
 
             // 3. Output two WriteLine staements that display those two variables with proper labels using String Interpolation
 
